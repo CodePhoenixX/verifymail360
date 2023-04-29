@@ -10,7 +10,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIco n';
+import ListItemIcon from '@mui/material/ListItemIcon';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import { Tooltip } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
