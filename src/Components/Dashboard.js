@@ -7,12 +7,8 @@ function Dashboard() {
   return (
     <>
     <Navbar />
-      <Box sx={{ display: 'flex' }}>
-        <div className='Dashboard'>
-          <Sidenav />
-          <h1>Dashboard Page</h1>
-        </div>
-      </Box>
+    <Sidenav />
+    <h1 className='Dashboard'>Dashboard</h1>
     </>
 
   )

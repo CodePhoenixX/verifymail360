@@ -1,28 +1,40 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Sidenav from './Sidenav'
+// import Navbar from './Navbar'
+// import Sidenav from './Sidenav'
+import styles from '../CSS/Login.css'
+import {Link} from 'react-router-dom';
 
 function Login() {
     return (
         <>
-            <Navbar />
-            <Sidenav />
-            <form className='Dashboard'>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div className="containerCustom Dashboard-1">
+                <div className="contact-boxCustom">
+                    <div className="leftCustom"></div>
+                    <div className="rightCustom">
+                        <h2 className='loginHeading'>Login Form</h2>
+                        <div className="form-group-1">
+                            <input type="text" id="email" required autoComplete='off' />
+                            <label htmlFor="email">Your Email: </label>
+                        </div>
+
+                        <div className="form-group-1">
+                            <input type="password" id="password" required />
+                            <label htmlFor="email">Your Password: </label>
+                        </div>
+
+                        <div className="div-flex">
+                        <p className='check'><input className="check-mark" type="checkbox" onclick="myFunction()"/> 
+                        Show Password
+                        <Link to = "/forgot-password">
+                            <a href="" className='check-1'>Forgot Password</a>
+                        </Link>
+                        </p>
+                        <button type='submit' className="btnCustom">Login</button>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </>
     )
 }

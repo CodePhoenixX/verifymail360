@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #393e46;
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* .main-container {
+    margin-right: 4rem;
+} */
+
+.input-box-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.form-flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.profile-form {
+    width: 20rem;
+    height: 50px;
+    position: relative;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.profile-form input {
+    position: absolute;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #393e46;
+    border-radius: .5rem;
+    color: #000000;
+}
+
+.profile-form label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #393e46;
+    font-size: .9rem;
+    pointer-events: none;
+    padding: 0.3rem;
+    background-color: #ffffff;
+    transition: 200ms ease-in-out top,
+        200ms ease-in-out font-size,
+        200ms ease-in-out color;
+}
+
+input:focus+label,
+input:valid+label {
+    top: 0;
+    font-size: .8rem;
+    color: #393e46;
+    font-weight: 500;
+}
+
+.saveBtn {
+    padding: 0.5rem 2rem;
+    background-color: #393e46;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.saveBtn:hover {
+    background-color: #0d6efd;
+}
+
+.delete-account a{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fa0707;
+    margin: 1rem 1rem 2rem 1rem;
+    position: absolute;
+    bottom: 1rem;
+    text-decoration: none;
+}

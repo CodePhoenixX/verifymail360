@@ -13,9 +13,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { styled } from '@mui/material';
+import { Link } from 'react-router-dom'
+import styles from '../CSS/Navbar.css'
 
 // const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Logout'];
+const settings = [<Link to= "/profile" style={{textDecoration: 'none', color: '#343a40', padding: "15px"}}>Profile</Link>, <Link to= "/logout" style={{textDecoration: 'none', color: '#343a40', padding: "15px"}}>Logout</Link>];
 
 
 const AppBar = styled (MuiAppBar, {
@@ -43,7 +45,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar style={{position: "fixed", background: '#fff', color: '#393e46',fontSize: "30", boxShadow: 'none',borderBottom: '1px solid #cecdcd'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}

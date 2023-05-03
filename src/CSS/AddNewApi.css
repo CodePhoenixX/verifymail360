@@ -1,0 +1,131 @@
+
+.Api-container{
+    padding: 5rem 0 0 8rem;
+}
+
+.form-title {
+    margin-top: 1em;
+}
+
+/* .flex-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+} */
+
+.form-title .heading {
+    padding: .5em 0;
+    font-size: 1.3rem;
+    color: #171717;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.new_user {
+    max-width: 786px;
+    margin: auto;
+}
+
+.new_Api-user{
+    display: flex;
+    flex-direction: row;
+}
+
+.Api-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.Api-profile-form {
+    width: 25rem;
+    height: 50px;
+    position: relative;
+    margin: 1rem 1rem 2rem 1rem;
+}
+/* ---------- */
+
+.Api-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.Generate-Api{
+    padding: .5rem 2rem;
+    background-color: #393e46;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Generate-Api:hover {
+    background-color: #0d6efd;
+}
+
+/* .Api-profile-form h3{
+    font-size: 20px;
+} */
+
+
+.select-menu{
+    width: 380px;
+    margin-left: 1rem;
+    /* margin: 140px auto; */
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}

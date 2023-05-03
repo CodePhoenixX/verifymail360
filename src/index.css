@@ -13,7 +13,7 @@ code {
 }
 
 .Dashboard{
-  padding: 0 0 0 8rem;
+  padding: 7rem 0 0 8rem;
 }
 
 .form-control{
@@ -21,6 +21,8 @@ code {
 }
 
 /* textfield--Single verify */
-.textfield{
-  width: 10rem !important;
-} 
+
+
+.boxHeight{
+  width: 20rem;
+}

@@ -1,16 +1,16 @@
 import React from 'react'
 import Sidenav from './Sidenav'
 import Navbar from './Navbar'
-import { TextField, Button} from '@mui/material';
 import axios from 'axios';
 import { useState } from 'react';
+import styles from '../CSS/SingleVerify.css'
 
 const apiUrl = 'http://178.18.240.183:8080/logix/';
 
 const SingleVerify = () => {
-  
+
   const [email, setEmail] = useState('');
-  const [resData, setresData]=useState();
+  const [resData, setresData] = useState();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,33 +44,31 @@ const SingleVerify = () => {
 
   return (
     <>
-       <Navbar />
-       <Sidenav />
-    <form onSubmit={handleSubmit} className='Dashboard'>
-      <TextField
-        label="Email"
-        value={email}
-        onChange={handleChange}
-        variant="outlined"
-        margin="normal"
-        fullWidth
-      />
-      <Button type="submit" variant="contained" color="primary">
-        Submit
-      </Button>
-      
-        {/* {JSON.stringify(resData)} */}
+      <Navbar />
+      <Sidenav />
 
+      <form className="Dashboard" onSubmit={handleSubmit}>
+        <div className="container-1">
+          <div className="form-group">
+            <input type="text" id="email" required autoComplete='off' onChange={handleChange} />
+            <label htmlFor="email">Your Email: </label>
+          </div>
+          <button type="submit" className="btnCustom-1">Verify Email</button>
+        </div>
+      </form>
+
+      <div className='Dashboard'>
         {resData && (
-        <table>
-          <tbody>
-            {renderTableRows()}
-          </tbody>
-        </table>
-      )}
-    </form>
+          <table>
+            <tbody>
+              {renderTableRows()}
+            </tbody>
+          </table>
+        )}
+      </div>
+
     </>
-    
+
   );
 };
 

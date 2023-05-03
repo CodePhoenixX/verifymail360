@@ -6,10 +6,8 @@ function BulkVerify() {
   return (
     <>
     <Navbar />
-    <div className='Dashboard'>
-        <Sidenav/>
-        <h1>Bulk-Verify</h1>
-    </div>
+    <Sidenav />
+        <h1 className='Dashboard'>Bulk-Verify</h1>
     </>
   )
 }

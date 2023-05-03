@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .forgotHeading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #393e46;
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .forgotContainer {
+    margin-right: 4rem;
+  }
+  
+  
+  .forgot-form {
+    width: 25rem;
+    height: 50px;
+    position: relative;
+    margin: 1rem 1rem 1.5rem 1rem;
+  }
+  
+  .forgot-form input {
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #393e46;
+    border-radius: .5rem;
+    color: #000000;
+  }
+  
+  .forgot-form label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #393e46;
+    font-size: .9rem;
+    pointer-events: none;
+    padding: 0 .3rem;
+    background-color: #ffffff;
+    transition: 200ms ease-in-out top,
+      200ms ease-in-out font-size,
+      200ms ease-in-out color;
+  }
+  
+  input:focus+label,
+  input:valid+label {
+    top: 0;
+    font-size: .8rem;
+    color: #393e46;
+    font-weight: 500;
+  }
+  
+  .contact-boxCustom {
+    /* max-width: 850px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(196, 195, 195, 0.19);
+    height: 37rem;
+  }
+  
+  .forgotImg {
+    background: url("/public/img/forgot.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .forgotRight {
+    padding: 5rem;
+    margin-right: 2rem;
+  }
+  
+  .Dashboard-1 {
+    padding: 4rem 0 0 3.5rem;
+  }
+  
+  .btnCustom {
+    padding: 0.5rem 2rem;
+    background-color: #393e46;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .btnCustom:hover {
+    background-color: #0d6efd;
+  }
+
+  .flex-div{
+    float: left;
+  }
+  
+  .back-to-login{
+    text-align: start;
+    margin-left: 1rem;
+    display: block;
+  }
+
+  .back-to-login a{
+    color: #393e46;
+    text-decoration: none;
+  }
