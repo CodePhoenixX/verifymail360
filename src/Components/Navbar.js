@@ -5,16 +5,13 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-// import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { styled } from '@mui/material';
 import { Link } from 'react-router-dom'
-import styles from '../CSS/Navbar.css'
+import '../CSS/Navbar.css'
 
 // const pages = ['Products', 'Pricing', 'Blog'];
 const settings = [<Link to= "/profile" style={{textDecoration: 'none', color: '#343a40', padding: "15px"}}>Profile</Link>, <Link to= "/logout" style={{textDecoration: 'none', color: '#343a40', padding: "15px"}}>Logout</Link>];
@@ -53,21 +50,21 @@ function Navbar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'sans-serif',
               fontWeight: 700,
-              color: 'inherit',
+              color: '#343a40',
               textDecoration: 'none',
             }}
           >
-            VerifyMail360
+            <Link to = '/dashboard' className='logo'>VerifyMail360</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
+          <Link to = '/dashboard' className='logo'>VerifyMail360</Link>
+            {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -76,7 +73,7 @@ function Navbar() {
               color="inherit"
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -102,7 +99,7 @@ function Navbar() {
               ))} */}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap

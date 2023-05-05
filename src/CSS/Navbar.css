@@ -1,0 +1,11 @@
+.logo{
+    color: #343a40;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+
+.logo:hover{
+    color: #0d6efd;
+}

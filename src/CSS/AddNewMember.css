@@ -1,0 +1,75 @@
+.Add-member-container {
+    padding: 5rem 0 0 8rem;
+}
+
+.Add-member-title {
+    margin-top: 1em;
+}
+
+/* .flex-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+} */
+
+.Add-member-title .heading {
+    padding: .5em 0;
+    font-size: 1.3rem;
+    color: #171717;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.new_user {
+    max-width: 786px;
+    margin: auto;
+}
+
+.new_Api-user {
+    display: flex;
+    flex-direction: row;
+}
+
+.Add-member-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.Add-member-profile-form {
+    width: 25rem;
+    height: 50px;
+    position: relative;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+/* ---------- */
+
+.Api-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.Add-member {    
+    width: 200px;
+    height: max-content;
+    padding: 12px;
+    background-color: #393e46;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    display: block;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 1rem;
+}
+
+.Add-member:hover {
+    background-color: #0d6efd;
+}
+
+/* .Add-member-profile-form h3{
+    font-size: 20px;
+} */

@@ -7,18 +7,6 @@ import { Helmet } from 'react-helmet'
 var randomstring = require("randomstring");
 
 
-
-// const Demo = props => (
-//     <div className="application">
-//         <Helmet>
-//             <script>
-                
-//             </script>
-//         </Helmet>
-//     </div>
-
-//     );
-
 export default function AddNewAPI() {
     return (
         <>
@@ -56,36 +44,17 @@ export default function AddNewAPI() {
                                 <div className="select-menu">
                                    <select className='select-menu form-select form-select-lg'>
                                         <option>--Select Api Type--</option>
-                                        <option value={"single"}>single</option>
+                                        <option value={"single"}>Single</option>
                                         <option value={"single"}>Bulk</option>
                                    </select>
                                 </div>
 
                                 <div className="Api-profile-form">
-                                    <input type="text" id="apikey" readOnly={"true"} value={randomstring.generate(25)}></input>
+                                    <input type="text" readOnly={"true"} value={randomstring.generate(25)}></input>
                                     {/* <label htmlFor="name">Your Api Key: </label> */}
                                 </div>
-
-                                <button className="Generate-Api" id='keygen'>Save</button>
-
-
-
-                                {/* <div className="Api-profile-form-1">
-                                    <label htmlFor="" className="button">Drop Down
-                                    <span className='bx bx-caret-down'></span>
-                                    </label>
-                                </div> */}
-
-                                {/* <div className="Api-profile-form">
-                                    <input type="date" id="date" required autoComplete='off' />
-                                    <label htmlFor="name">Activation Date: </label>
-                                </div>
-
-                                <div className="Api-profile-form">
-                                    <input type="datetime" id="date" required autoComplete='off' />
-                                    <label htmlFor="name">Disabled Date: </label>
-                                </div> */}
-
+                                <button className="Generate-Api">Save</button>
+                            
                             </div>
                         </div>
 

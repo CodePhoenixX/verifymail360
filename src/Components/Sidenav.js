@@ -8,7 +8,7 @@ export default function Sidenav() {
         <div className="sidebar">
           <ul className="nav-list">
             <li>
-              <Link to="/">
+              <Link to="/dashboard">
                 <i className='bx bx-grid-alt'></i>
                 <span className="links_name">Dashboard</span>
                 <span className="tooltip">Dashboard</span>

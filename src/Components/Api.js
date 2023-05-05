@@ -11,11 +11,11 @@ function Api() {
       <Sidenav />
 
       {/* <!-- Main Site --> */}
-      <main id="site-main" className='Api-margin'>
+      <main id="site-main">
         <div className="container">
           <div className="box-nav d-flex justify-between">
             <a href="" className="border-shadow">
-              <span className="text-gradient"> <Link to = "/add-new-api">Add New API</Link> <i className='bx bxs-user'></i></span>
+              <span className="text-gradient"> <Link to = "/add-new-api">Add New API</Link> <i className='bx bx-pie-chart-alt-2'></i></span>
             </a>
           </div>
 

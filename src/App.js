@@ -12,6 +12,7 @@ import Profile from './Components/Profile'
 import ForgotPass from './Components/ForgotPass'
 import DeleteConfirmation from './Components/DeleteConfirmation'
 import AddNewAPI from './Components/AddNewAPI'
+import AddNewMember from './Components/AddNewMember'
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
         <Router>
       {/* <Sidenav /> */}
             <Routes>
-              <Route path='/' element={<Dashboard/>}/>
+              <Route path='/' element={<Login/>}/>
+              <Route path='/dashboard' element={<Dashboard/>}/>
               <Route path='/single-verify' element={<SingleVerify/>}/>
               <Route path='/bulk-verify' element={<BulkVerify/>}/>
               <Route path='/api' element={<Api/>}/>
@@ -34,6 +36,7 @@ function App() {
               <Route path='/profile' element={<Profile/>}/>
               <Route path='/delete' element={<DeleteConfirmation/>}/>
               <Route path='/add-new-api' element={<AddNewAPI/>}/>
+              <Route path='/add-new-member' element={<AddNewMember/>}/>
             </Routes>
         </Router>
     </div>

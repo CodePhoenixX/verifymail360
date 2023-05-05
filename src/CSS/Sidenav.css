@@ -43,7 +43,7 @@
   }
   .sidebar li .tooltip{
     position: absolute;
-    top: -20px;
+    top: -5px;
     left: calc(100% + 15px);
     z-index: 3;
     background: #fff;
@@ -112,6 +112,19 @@
     font-size: 18px;
     border-radius: 12px;
   }
+
+
+  /* ---------------------------------- */
+
+  @media (max-width: 1070) {
+      .sidebar .nav-list{
+        margin-left: -1rem;
+      }
+  }
+
+
+
+
   @media (max-width: 420px) {
     .sidebar li .tooltip{
       display: none;

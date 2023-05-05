@@ -1,5 +1,4 @@
-
-.Api-container{
+.Api-container {
     padding: 5rem 0 0 8rem;
 }
 
@@ -25,12 +24,12 @@
     margin: auto;
 }
 
-.new_Api-user{
+.new_Api-user {
     display: flex;
     flex-direction: row;
 }
 
-.Api-form{
+.Api-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
@@ -42,15 +41,18 @@
     position: relative;
     margin: 1rem 1rem 2rem 1rem;
 }
+
 /* ---------- */
 
-.Api-btn{
+.Api-btn {
     display: flex;
     flex-direction: row;
 }
 
-.Generate-Api{
-    padding: .5rem 2rem;
+.Generate-Api {
+    width: 200px;
+    height: max-content;
+    padding: 12px;
     background-color: #393e46;
     color: #fff;
     font-size: 1.1rem;
@@ -61,6 +63,7 @@
     outline: none;
     cursor: pointer;
     transition: .3s;
+    margin-top: 1rem;
 }
 
 .Generate-Api:hover {
@@ -72,12 +75,21 @@
 } */
 
 
-.select-menu{
+.select-menu {
     width: 380px;
     margin-left: 1rem;
-    /* margin: 140px auto; */
+    margin-top: 0.5rem;
+    border-color: #393e46;
+    border-radius: 8px;
 }
-.select-menu .select-btn{
+
+.select-menu:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #393e46;
+}
+
+.select-menu .select-btn {
     display: flex;
     height: 55px;
     background: #fff;
@@ -88,28 +100,33 @@
     align-items: center;
     cursor: pointer;
     justify-content: space-between;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.select-btn i{
+
+.select-btn i {
     font-size: 25px;
     transition: 0.3s;
 }
-.select-menu.active .select-btn i{
+
+.select-menu.active .select-btn i {
     transform: rotate(-180deg);
 }
-.select-menu .options{
+
+.select-menu .options {
     position: relative;
     padding: 20px;
     margin-top: 10px;
     border-radius: 8px;
     background: #fff;
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     display: none;
 }
-.select-menu.active .options{
+
+.select-menu.active .options {
     display: block;
 }
-.options .option{
+
+.options .option {
     display: flex;
     height: 55px;
     cursor: pointer;
@@ -118,14 +135,17 @@
     align-items: center;
     background: #fff;
 }
-.options .option:hover{
+
+.options .option:hover {
     background: #F2F2F2;
 }
-.option i{
+
+.option i {
     font-size: 25px;
     margin-right: 12px;
 }
-.option .option-text{
+
+.option .option-text {
     font-size: 18px;
     color: #333;
 }

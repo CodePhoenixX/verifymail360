@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: "poppins", sans-serif;
     background: #fff;
 }
 
@@ -15,15 +16,17 @@ body {
     flex-direction: column;
     position: relative;
     width: 83rem;
-    height: 33rem;
-    /* background: #f1f1f1; */
+    background: #f1f1f1;
     margin: 100px auto 0;
     word-break: break-all;
+    border-radius: 17px 17px 0 0;
     /* border: 1px solid rgba(0, 0, 0, 0.274); */
 }
 
 .bloc-tabs {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tabs {
@@ -32,30 +35,32 @@ body {
     width: 23%;
     /* background: rgba(128, 128, 128, 0.075); */
     cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
     position: relative;
     outline: none;
 }
 
-.tabs:not(:last-child) {
+/* .tabs:not(:last-child) {
     border-right: 1px solid rgba(0, 0, 0, 0.274);
-}
+    border-left: 1px solid rgba(0, 0, 0, 0.274);
+} */
 
 .active-tabs {
-    background: white;
-    border-bottom: 1px solid transparent;
+    background: #dfdfdf;
+    /* border-bottom: 1px solid transparent; */
+    border-radius: 17px 17px 0 0;
 }
 
 .active-tabs::before {
     content: "";
     display: block;
     position: absolute;
-    top: -5px;
+    top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 5px;
-    background: rgb(88, 147, 241);
+    width: calc(100% - 40px);
+    height: 3px;
+    background: rgb(12 83 196);
 }
 
 
@@ -95,6 +100,7 @@ button {
 
 .active-content {
     display: block;
+    background-color: #dfdfdf;
 }
 
 
@@ -128,7 +134,8 @@ button {
 }
 
 .article-card .text {
-    align-items: start;
+    align-items: center;
+    margin-left: -3rem;
     font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
@@ -136,7 +143,7 @@ button {
 }
 
 .article-card .input-text {
-    width: 73%;
+    width: 60.5%;
     margin-top: 2rem;
     margin-left: 3rem;
     padding: 1.3rem 2rem;
@@ -149,7 +156,7 @@ button {
 .article-card .box-container {
     width: 18.2rem;
     height: 10rem;
-    background: #eff9fd;
+    background: #f0f0f0;
     padding: 2.25rem;
     text-align: center;
     margin-top: 3rem;
