@@ -13,6 +13,7 @@ import ForgotPass from './Components/ForgotPass'
 import DeleteConfirmation from './Components/DeleteConfirmation'
 import AddNewAPI from './Components/AddNewAPI'
 import AddNewMember from './Components/AddNewMember'
+import SignUp from './Components/SignUp'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <Route path='/delete' element={<DeleteConfirmation/>}/>
               <Route path='/add-new-api' element={<AddNewAPI/>}/>
               <Route path='/add-new-member' element={<AddNewMember/>}/>
+              <Route path='/sign-up' element={<SignUp/>}/>
             </Routes>
         </Router>
     </div>

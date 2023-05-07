@@ -24,7 +24,13 @@ function Profile() {
                                 <label htmlFor="name">Last Name: </label>
                             </div>
 
-                            <div className="profile-form">
+
+
+                        </div>
+
+                        <div className="form-flex-1">
+
+                            <div className="profile-form-1">
                                 <input type="email" id="email" required autoComplete='off' />
                                 <label htmlFor="email">Email ID: </label>
                             </div>
@@ -43,15 +49,21 @@ function Profile() {
                                 <label htmlFor="password">New Password: </label>
                             </div>
 
-                            <div className="profile-form">
-                                <input type="password" id="password" required autoComplete='off' />
-                                <label htmlFor="password">Confirm Password: </label>
-                            </div>
-
                         </div>
+
                     </div>
 
-                    <button type='submit' className="saveBtn">Save</button>
+                    <div className="form-flex">
+
+                        <div className="profile-form">
+                            <input type="password" id="password" required autoComplete='off' />
+                            <label htmlFor="password">Confirm Password: </label>
+                        </div>
+
+                        <button type='submit' className="saveBtn">Save</button>
+
+                    </div>
+
 
 
                 </div>

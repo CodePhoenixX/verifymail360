@@ -20,20 +20,27 @@
 
 .input-box-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
 .form-flex {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
 }
+
 
 .profile-form {
     width: 20rem;
     height: 50px;
     position: relative;
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.profile-form-1{
+    width: 42rem;
+    height: 50px;
+    position: relative;
+    margin: 0 1rem 2rem 1rem;
 }
 
 .profile-form input {
@@ -71,7 +78,8 @@ input:valid+label {
 }
 
 .saveBtn {
-    padding: 0.5rem 2rem;
+    width: 200px;
+    padding: 12px;
     background-color: #393e46;
     color: #fff;
     font-size: 1.1rem;
@@ -82,6 +90,7 @@ input:valid+label {
     outline: none;
     cursor: pointer;
     transition: .3s;
+    height: max-content;
 }
 
 .saveBtn:hover {
@@ -94,7 +103,45 @@ input:valid+label {
     letter-spacing: 1px;
     color: #fa0707;
     margin: 1rem 1rem 2rem 1rem;
-    position: absolute;
+    /* position: absolute; */
     bottom: 1rem;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 870px){
+    .Dashboard{
+        padding: 7rem 0 0 6rem;
+      }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 700px){
+    .input-box-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Dashboard {
+        padding: 5rem 0 0 4rem;
+    }
+
+    .profile-heading{
+        margin-bottom: 2rem;
+    }
+
+    .delete-account a{
+        margin-bottom: -2rem;
+        padding: 0 0 2rem 0;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 400px){
+    .delete-account a{
+        overflow-y: scroll;
+        margin-bottom: -6rem;
+    }
+
+    .profile-heading{
+        margin-bottom: 2rem;
+    }
 }

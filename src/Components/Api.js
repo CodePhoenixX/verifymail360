@@ -11,7 +11,7 @@ function Api() {
       <Sidenav />
 
       {/* <!-- Main Site --> */}
-      <main id="site-main">
+      <main id="site-main Dashboard">
         <div className="container">
           <div className="box-nav d-flex justify-between">
             <a href="" className="border-shadow">

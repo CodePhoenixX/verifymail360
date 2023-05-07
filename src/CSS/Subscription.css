@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 83rem;
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
     margin: 100px auto 0;
     word-break: break-all;
     border-radius: 17px 17px 0 0;

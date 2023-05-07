@@ -3,7 +3,7 @@ import Sidenav from './Sidenav'
 import Navbar from './Navbar'
 import axios from 'axios';
 import { useState } from 'react';
-import styles from '../CSS/SingleVerify.css'
+import '../CSS/SingleVerify.css'
 
 const apiUrl = 'http://178.18.240.183:8080/logix/';
 
@@ -35,7 +35,7 @@ const SingleVerify = () => {
       <Navbar />
       <Sidenav />
 
-      <form className="Dashboard" onSubmit={handleSubmit}>
+      <form className="left-margin-1 Dashboard-margin" onSubmit={handleSubmit}>
         <div className="container-1">
           <div className="form-group">
             <input type="text" id="email" required autoComplete='off' onChange={handleChange} />

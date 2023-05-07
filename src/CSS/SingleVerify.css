@@ -12,6 +12,10 @@ body {
   /* background-color: #f8f8f8; */
 }
 
+.Dashboard-margin{
+  padding: 7rem 0 0 8rem;
+}
+
 .left-margin {
   padding: 1rem 0 0 8rem;
 }
@@ -98,10 +102,11 @@ input:valid+label {
 
 
 .card {
-  width: 52rem;
+  width: 55rem;
   /* height: 30rem; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 .card-container {
   padding: 1rem 3rem;
@@ -116,8 +121,8 @@ input:valid+label {
   padding: 3px;
   text-align: left;
   font-weight: 400;
-  max-width: 141px;
-  margin-left: 2rem;
+  max-width: 200px;
+  margin-left: 3rem;
 
 }
 
@@ -187,4 +192,41 @@ input:valid+label {
 
 .suggestion p {
   font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .left-margin-1 {
+    padding: 4rem 0 0 6rem;
+  }
+
+  .left-margin {
+    padding: 1rem 0 0 6rem;
+  }
+
+  .card{
+    width: 45rem;
+    margin-right: 7rem;
+  }
+
+  .content-table{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* align-items: center; */
+  }
+
+  .content-table tr td {
+    padding: 3px;
+    text-align: left;
+    max-width: 100px;
+    margin-left: 0;
+  
+  }
+
+  .content-table tr td {
+    max-width: 300px;
+  
+  }
+  
 }

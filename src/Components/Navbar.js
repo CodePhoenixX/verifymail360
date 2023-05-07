@@ -10,25 +10,25 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { styled } from '@mui/material';
-import { Link } from 'react-router-dom'
-import '../CSS/Navbar.css'
+import { Link } from 'react-router-dom';
+import '../CSS/Navbar.css';
 
 // const pages = ['Products', 'Pricing', 'Blog'];
-const settings = [<Link to= "/profile" style={{textDecoration: 'none', color: '#343a40', padding: "15px"}}>Profile</Link>, <Link to= "/logout" style={{textDecoration: 'none', color: '#343a40', padding: "15px"}}>Logout</Link>];
+const settings = [<Link to="/profile" style={{ textDecoration: 'none', color: '#343a40', padding: "15px" }}>Profile</Link>, <Link to="/logout" style={{ textDecoration: 'none', color: '#343a40', padding: "15px" }}>Logout</Link>];
 
 
-const AppBar = styled (MuiAppBar, {
-  })(({theme }) => ({
-    zIndex: theme.zIndex.drawer + 1
-  }));
+const AppBar = styled(MuiAppBar, {
+})(({ theme }) => ({
+  zIndex: theme.zIndex.drawer + 1
+}));
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -42,7 +42,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar style={{position: "fixed", background: '#fff', color: '#393e46',fontSize: "30", boxShadow: 'none',borderBottom: '1px solid #cecdcd'}}>
+    <AppBar style={{ position: "fixed", background: '#fff', color: '#393e46', fontSize: "30", boxShadow: 'none', borderBottom: '1px solid #cecdcd' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -59,81 +59,32 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            <Link to = '/dashboard' className='logo'>VerifyMail360</Link>
+            {/* Working here to load site logo-------------------- */}
+            <Link to='/dashboard' className='logo'>  <img src='img/logo.svg' alt='mySvgImage' />
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-          <Link to = '/dashboard' className='logo'>VerifyMail360</Link>
-            {/* <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton> */}
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
-            </Menu>
+            <Link to='/dashboard' className='logo'>  <img src='img/logo.svg' alt='mySvgImage' /></Link>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            
-          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))} */}
+            <b>Plan:</b> Monthly
           </Box>
 
+          {/* Support Icon */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Link to="/support">
+          <i class='bx bx-help-circle' ></i>
+            {/* <span className="links_name">Support</span> */}
+          </Link>
+          </Box>
+
+
+          {/* User Avatar */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Amit" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -158,6 +109,8 @@ function Navbar() {
                 </MenuItem>
               ))}
             </Menu>
+
+
           </Box>
         </Toolbar>
       </Container>

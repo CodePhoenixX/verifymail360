@@ -114,19 +114,33 @@
   }
 
 
-  /* ---------------------------------- */
+ 
+  
 
-  @media (max-width: 1070) {
-      .sidebar .nav-list{
-        margin-left: -1rem;
-      }
-  }
+  /* ----------------------------------Media Query------------------------- */
 
 
-
-
-  @media (max-width: 420px) {
-    .sidebar li .tooltip{
-      display: none;
+  @media screen and (max-width: 1300px){
+    .sidebar{
+      width: 60px;
+      height: 100vh;
+      border-right: .4px solid #cecdcd;
     }
   }
+
+/* @media screen and (max-width: 700px){
+  .sidebar{
+    width: 60px;
+    height: 100vh;
+    border-right: .4px solid #cecdcd;
+  }
+} */
+
+
+.active {
+  /* background: #0d6efd; */
+}
+
+.sidebar .nav-list li.active i {
+  color: #0d6efd;
+}
