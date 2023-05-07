@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import '../CSS/SingleVerify.css'
 
-const apiUrl = 'http://178.18.240.183:8080/logix/';
+const apiUrl = 'https://api.verifymail360.com/logix/';
 
 const SingleVerify = () => {
   const [loading, setLoading] = useState(false);
