@@ -135,8 +135,8 @@ input:valid+label {
 
 }
 
-.details-container {
-  padding: 0 3rem;
+.details{
+  display: block;
 }
 
 .details h3 {
@@ -162,11 +162,15 @@ input:valid+label {
 }
 
 .mx-records p {
-  font-size: 13px;
+  font-size: 15px;
   margin-top: -8px;
   padding-top: 0;
-  line-height: 1;
+  line-height: 1.5;
 }
+
+/* .spf-details{
+  margin-left: 30px;
+} */
 
 .spf-details h4 {
   font-size: 13px;
@@ -196,6 +200,13 @@ input:valid+label {
 
 
 /* Media Query for single verify */
+
+@media screen and (max-width: 900px){
+  .card{
+    
+  }
+}
+
 
 @media screen and (max-width: 700px) {
 
@@ -235,7 +246,7 @@ input:valid+label {
 
   .card{
     width: 20rem;
-    margin-right: 0;
+    margin-right: 2rem;
   }
 
   .content-table{
@@ -271,7 +282,8 @@ input:valid+label {
 }
 
 .mx-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: left;
   align-items: center;
 }
