@@ -14,3 +14,11 @@
     vertical-align: middle;
     width: 10.5rem;
 }
+
+
+@media screen and (max-width: 700px){
+    .logo img{
+        vertical-align: middle;
+        width: 7.5rem;
+    }
+}

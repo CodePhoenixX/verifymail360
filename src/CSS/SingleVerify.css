@@ -194,19 +194,48 @@ input:valid+label {
   font-size: 13px;
 }
 
+
+/* Media Query for single verify */
+
 @media screen and (max-width: 700px) {
 
+  .left-margin {
+    padding: 1rem 0;
+  }
+
+  .Dashboard-margin{
+    padding: 0;
+  }
+
+  .container-1 {
+    display: block;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+  .form-group {
+    width: 20rem;
+    height: 40px;
+  }
+
+  .btnCustom-1 {
+    margin-left: 0;
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
   .left-margin-1 {
-    padding: 4rem 0 0 6rem;
+    padding: 60px 0 10px 50px;
   }
 
   .left-margin {
-    padding: 1rem 0 0 6rem;
+    padding: 7px 70px;
   }
 
   .card{
-    width: 45rem;
-    margin-right: 7rem;
+    width: 20rem;
+    margin-right: 0;
   }
 
   .content-table{
@@ -217,7 +246,7 @@ input:valid+label {
   }
 
   .content-table tr td {
-    padding: 3px;
+    padding: 6px;
     text-align: left;
     max-width: 100px;
     margin-left: 0;
@@ -228,5 +257,23 @@ input:valid+label {
     max-width: 300px;
   
   }
+
+  .card-container {
+    padding: 6px 12px;
+  }
+
+  .details-container {
+    padding: 0 12px;
+}
+
+.details h3 {
+  font-size: 15px;
+}
+
+.mx-container {
+  display: block;
+  text-align: left;
+  align-items: center;
+}
   
 }
