@@ -15,6 +15,11 @@ function Login() {
         }
     }
 
+    function login(){
+        window.location.replace('/dashboard');
+
+    }
+
     return (
         <>
             <div className="containerCustom Dashboard-1">
@@ -23,12 +28,12 @@ function Login() {
                     <div className="rightCustom">
                         <h2 className='loginHeading'>Log In</h2>
                         <div className="form-group-1">
-                            <input type="text" id="email" required autoComplete='off' />
+                            <input type="text" id="email" required autoComplete='off' value={"admin@gmail.com"} />
                             <label htmlFor="email">Your Email: </label>
                         </div>
 
                         <div className="form-group-1">
-                            <input type="password" id="password" required />
+                            <input type="password" id="password" value="password123" required />
                             <label htmlFor="email">Your Password: </label>
                         </div>
 
@@ -39,7 +44,7 @@ function Login() {
                                     <span className='check-1'>Forgot Password</span>
                                 </Link>
                             </p>
-                            <button type='submit' className="btnCustom">Login</button>
+                            <button type='submit' onClick={login} className="btnCustom">Login</button>
                         </div>
                         <Link to = "/sign-up">
                             <span className='check-1'>Sign Up</span>
