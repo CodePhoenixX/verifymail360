@@ -130,7 +130,7 @@ const SingleVerify = () => {
               </div>
 
               <div className="spf-details">
-                <h4>SFC</h4>
+                <h4>SPF</h4>
                 <p>v=spf1 redirect=_spf.google.com</p>
               </div>
             </div>
