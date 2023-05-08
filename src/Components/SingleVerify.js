@@ -22,7 +22,7 @@ const SingleVerify = () => {
       setLoading(false);
     } catch (error) {
       setLoading(false); // Stop loading in case of error
-      console.error(error);
+      setresData(error);
     }
   };
   const handleChange = (e) => {
@@ -65,15 +65,27 @@ const SingleVerify = () => {
                   <td>:{resData.reachable}</td>
                 </tr>
 
-                <tr>
-                  <th>Is inbox full</th>
-                  <td>:{resData.smtp.full_inbox ? 'Yes' : 'No'}</td>
-                </tr>
 
-                <tr>
-                  <th>Can be delivered</th>
-                  <td>:{resData.smtp.deliverable ? 'Yes' : 'No'}</td>
-                </tr>
+                {resData.smtp &&
+                  <>
+                    <tr>
+                      <th>Is inbox full</th>
+                      <td>:{resData.smtp.full_inbox ? 'Yes' : 'No'}</td>
+                    </tr>
+
+                    <tr>
+                      <th>Can be delivered</th>
+                      <td>:{resData.smtp.deliverable ? 'Yes' : 'No'}</td>
+                    </tr>
+
+
+                    <tr>
+                      <th>Catch All Domain</th>
+                      <td>:{resData.smtp.catch_all ? 'Yes' : 'No'}</td>
+                    </tr>
+
+                  </>
+                }
 
               </table>
 
@@ -91,13 +103,10 @@ const SingleVerify = () => {
 
                 <tr>
                   <th>Disposable</th>
-                  <td>:{resData.disposable ? <span className='text-danger'>Yes</span> : <span className='text-success'>No</span>}</td>
+                  <td>:{resData.disposable ? <span className='bg-danger text-white'>Yes</span> : <span className='text-success'>No</span>}</td>
                 </tr>
 
-                <tr>
-                  <th>Catch All Domain</th>
-                  <td>:{resData.smtp.catch_all ? 'Yes' : 'No'}</td>
-                </tr>
+
 
                 <tr>
                   <th>MX Found</th>
@@ -118,11 +127,15 @@ const SingleVerify = () => {
                 <div className="mx-records">
                   <h4>MX Records</h4>
                   <p>
-                    {resData.available_mx_record.map((record, index) => (
-                      <div key={index}>
-                        {record}<br />
+                  {resData.available_mx_record && resData.available_mx_record.length > 0 &&
+                      <div>
+                        {resData.available_mx_record.map((record, index) => (
+                          <div key={index}>
+                            {record}<br />
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    }
                   </p>
                 </div>
 

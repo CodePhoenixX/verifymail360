@@ -42,7 +42,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar style={{ position: "fixed", background: '#fff', color: '#393e46', fontSize: "30", boxShadow: 'none', borderBottom: '1px solid #cecdcd' }}>
+    <AppBar className='Appbar-nav' style={{ position: "fixed", background: '#fff', color: '#393e46', fontSize: "30", boxShadow: 'none', borderBottom: '1px solid #cecdcd', zIndex: 99999, }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -60,23 +60,45 @@ function Navbar() {
             }}
           >
             {/* Working here to load site logo-------------------- */}
-            <Link to='/dashboard' className='logo'>  <img src='img/logo.svg' alt='mySvgImage' />
+            <Link to='/single-verify' className='logo'>  <img src='img/logo.svg' alt='mySvgImage' />
             </Link>
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <Link to='/dashboard' className='logo'>  <img src='img/logo.svg' alt='mySvgImage' /></Link>
-          </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <b>Plan:</b> Monthly
+          <Box sx={{ flexGrow: 30, display: { xs: 'flex', md: 'none' } }}>
+            <Link to='/single-verify' className='logo'>  <img src='img/logo.svg' alt='mySvgImage' /></Link>
           </Box>
 
+
+
+
           {/* Support Icon */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-          <Link to="/support">
-          <i class='bx bx-help-circle' ></i>
-            {/* <span className="links_name">Support</span> */}
-          </Link>
+
+          <Box style={{ flexGrow: 30 }}>
+
+          </Box>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }} >
+
+            <p style={{ fontSize: '20px', marginRight: '30px', marginBottom: 0 }}><b>Plan:</b> Monthly</p>
+
+            <Link to="/support" style={{fontSize: '25px', color: '#343a40', lineHeight: 0, marginRight: '30px', marginBottom: 0, marginTop: '4px' }}>
+
+              
+
+              <div className="dropdown">
+                <a  href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style={{color: '#343a40'}}>
+                <i className='bx bx-help-circle' ></i>
+                </a>
+
+                <ul className="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuLink">
+                  <li><a className="dropdown-item" href="#">List-Item-1</a></li>
+                  <li><a className="dropdown-item" href="#">List-Item-2</a></li>
+                  <li><a className="dropdown-item" href="#">List-Item-3</a></li>
+                  <li><a className="dropdown-item" href="#">List-Item-4</a></li>
+                  <li><a className="dropdown-item" href="#">List-Item-5</a></li>
+                </ul>
+              </div>
+
+            </Link>
           </Box>
 
 

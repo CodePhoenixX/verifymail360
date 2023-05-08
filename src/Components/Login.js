@@ -1,7 +1,7 @@
 import React from 'react'
 // import Navbar from './Navbar'
 // import Sidenav from './Sidenav'
-import styles from '../CSS/Login.css'
+import '../CSS/Login.css'
 import { Link } from 'react-router-dom';
 
 function Login() {
@@ -15,8 +15,8 @@ function Login() {
         }
     }
 
-    function login(){
-        window.location.replace('/dashboard');
+    function login() {
+        window.location.replace('/single-verify');
 
     }
 
@@ -46,9 +46,14 @@ function Login() {
                             </p>
                             <button type='submit' onClick={login} className="btnCustom">Login</button>
                         </div>
-                        <Link to = "/sign-up">
-                            <span className='check-1'>Sign Up</span>
-                        </Link>
+
+                        <div className="login-link">
+                            <Link to="/sign-up" style={{textDecoration: 'none'}}>
+                                <p>Don't have an account <span>Sign Up</span></p>
+                            </Link>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

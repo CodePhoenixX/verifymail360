@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../CSS/Subscription.css'
+import '../CSS/Subscription.css'
 
 function SubscriptionCard() {
     return (
@@ -12,7 +12,13 @@ function SubscriptionCard() {
                             <input type="text" className='input-text' />
                         </div>
 
-                        <div className="box-container"></div>
+                        <div className="box-container">
+
+                            <h2>Calculate Here</h2>
+
+                        <button type='submit'className="bye-now">Bye Now</button>
+
+                        </div>
 
                     </div>
                     <div className="right-content">
@@ -53,7 +59,7 @@ function SubscriptionCard() {
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="" className='learn-more'>Learn more about enterprise</a>
+                        <a className='learn-more'>Learn more about enterprise</a>
                     </div>
                 </div>
             </div>

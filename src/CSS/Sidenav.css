@@ -17,13 +17,15 @@
 
 .sidebar {
   position: fixed;
-  left: .3rem;
+  left: 0;
   top: 3rem;
   width: 4%;
   height: 100vh;
   border-right: .4px solid #cecdcd;
   z-index: 99;
   transition: all 0.5s ease;
+  background-color: #ffffff;
+  z-index: 9999;
 }
 
 .sidebar i {
@@ -35,13 +37,11 @@
 
 .sidebar .nav-list {
   margin-top: 20px;
-  /* background-color: #315795; */
-  /* border-right: 1px solid #393e46; */
 }
 
 .sidebar li {
   position: relative;
-  margin: 8px 1rem 8px -1rem;
+  margin: 0px 0rem 17px -1rem;
   text-align: center;
   list-style: none;
 }
@@ -117,10 +117,9 @@
 }
 
 .sidebar li i {
-  height: 50px;
-  line-height: 50px;
-  font-size: 18px;
-  border-radius: 12px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
 }
 
 
@@ -150,7 +149,7 @@
     list-style: none;
   }
   .nav-list li i{
-    font-size: 12px;
+    font-size: 14px;
     padding-right: 3px;
     margin-left: 0;
   }

@@ -40,7 +40,7 @@ function AddNewMember() {
 
                 <div className="Add-member-profile-form">
                   <input type="text" id='' required autoComplete='off' />
-                  <label htmlFor="name">Yahan Ki Likhiye</label>
+                  <label htmlFor="name">-------------</label>
                 </div>
                 <button className="Add-member">Add Me</button>
 

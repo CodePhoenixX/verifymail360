@@ -23,6 +23,9 @@
 .border-shadow {
     border: 1px solid #fff;
     box-shadow: 1px 3px 10px #e9ecef;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .text-gradient {

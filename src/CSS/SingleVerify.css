@@ -14,10 +14,16 @@ body {
 
 .Dashboard-margin{
   padding: 7rem 0 0 8rem;
+  /* position: absolute;
+    top: 13%;
+    left: 27%; */
 }
 
 .left-margin {
   padding: 1rem 0 0 8rem;
+  /* position: absolute;
+    top: 25%;
+    left: 20%; */
 }
 
 .container-1 {
@@ -123,13 +129,13 @@ input:valid+label {
   font-weight: 400;
   max-width: 200px;
   margin-left: 3rem;
-
+  font-size: 14px;
 }
 
 
 .content-table th {
   color: #393e46;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   min-width: 160px;
 
@@ -162,10 +168,12 @@ input:valid+label {
 }
 
 .mx-records p {
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 200;
   margin-top: -8px;
   padding-top: 0;
   line-height: 1.5;
+  letter-spacing: .2px ;
 }
 
 /* .spf-details{
@@ -178,10 +186,11 @@ input:valid+label {
 }
 
 .spf-details p {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: -8px;
   padding-top: 3px;
   line-height: 1;
+  letter-spacing: .2px;
 }
 
 .dmarc h4 {
@@ -190,8 +199,9 @@ input:valid+label {
 }
 
 .dmarc p {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: -5px;
+  letter-spacing: .2px;
 }
 
 .suggestion p {
@@ -201,11 +211,6 @@ input:valid+label {
 
 /* Media Query for single verify */
 
-@media screen and (max-width: 900px){
-  .card{
-    
-  }
-}
 
 
 @media screen and (max-width: 700px) {
@@ -223,10 +228,12 @@ input:valid+label {
     flex-direction: column;
     align-items: start;
     text-align: left;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
   .form-group {
-    width: 20rem;
+    width: 21.5rem;
     height: 40px;
   }
 
@@ -241,12 +248,12 @@ input:valid+label {
   }
 
   .left-margin {
-    padding: 7px 70px;
+    padding: 7px 0 0 52px;
   }
 
   .card{
-    width: 20rem;
-    margin-right: 2rem;
+    width: 21.5rem;
+    /* margin-right: 2rem; */
   }
 
   .content-table{
@@ -265,7 +272,19 @@ input:valid+label {
   }
 
   .content-table tr td {
-    max-width: 300px;
+    max-width: 160px;
+    font-size: 14px;
+  
+  } 
+
+  .content-table th {
+    min-width: 150px;
+    font-size: 15px;
+  
+  }
+
+  .content-table tr {
+    display: flex;
   
   }
 
@@ -274,7 +293,7 @@ input:valid+label {
   }
 
   .details-container {
-    padding: 0 12px;
+    padding: 0;
 }
 
 .details h3 {
@@ -286,6 +305,31 @@ input:valid+label {
   flex-direction: column;
   text-align: left;
   align-items: center;
+}
+
+.mx-records h4 {
+  font-size: 14px;
+}
+
+.mx-records p {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.spf-details h4 {
+  font-size: 14px;
+}
+
+.spf-details p {
+  font-size: 12px;
+}
+
+.dmarc h4 {
+  font-size: 14px;
+}
+
+.dmarc p {
+  font-size: 12px;
 }
   
 }

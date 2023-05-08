@@ -48,7 +48,7 @@ body {
 .active-tabs {
     background: #dfdfdf;
     /* border-bottom: 1px solid transparent; */
-    border-radius: 17px 17px 0 0;
+    /* border-radius: 17px 17px 0 0; */
 }
 
 .active-tabs::before {
@@ -58,9 +58,9 @@ body {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
     height: 3px;
-    background: rgb(12 83 196);
+    background: #0d6efd;
 }
 
 
@@ -155,21 +155,34 @@ button {
 
 .article-card .box-container {
     width: 18.2rem;
-    height: 10rem;
+    /* height: 10rem; */
     background: #f0f0f0;
     padding: 2.25rem;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top: 3rem;
     margin-left: 3rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
-    align-items: center;
+    flex-direction: column;
 }
 
+.bye-now {
+    padding: 4px 15px;
+    background-color: #393e46;
+    color: #fff;
+    font-size: 13px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bye-now:hover {
+    background-color: #0d6efd;
+}
 
 
 /* ------- */
@@ -191,6 +204,7 @@ button {
     margin-bottom: 0.5rem;
     font-weight: 400;
 }
+
 .article-card .right-content .h4 {
     display: flex;
     font-size: .9rem;
@@ -226,7 +240,7 @@ button {
     width: 50%;
 }
 
-.learn-more{
+.learn-more {
     font-size: 14px;
     margin-top: 1.5rem;
     color: #1e9fc4;
